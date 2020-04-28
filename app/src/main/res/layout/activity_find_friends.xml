@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriendsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_friend_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="250dp"
+                android:hint="Search.."
+                android:id="@+id/findfriend_input"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:id="@+id/find_friend_searchButton"
+                android:layout_toRightOf="@id/findfriend_input"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/find_friend_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:id="@+id/search_result_list"
+        ></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

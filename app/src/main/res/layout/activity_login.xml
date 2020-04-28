@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F7"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="173dp"
+        android:layout_height="155dp"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/google" />
+    <EditText
+        android:layout_below="@id/login_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_email"
+        android:background="@drawable/inputs"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:hint="Email"></EditText>
+
+    <EditText
+        android:layout_below="@id/login_email"
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/inputs"
+        android:padding="12dp"
+        android:drawableLeft="@drawable/ic_password_lock"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:textAlignment="center"
+        android:layout_below="@id/login_password"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:textSize="22sp"
+        android:id="@+id/login_button"
+        ></Button>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_an_account"
+        android:layout_below="@id/login_button"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:id="@+id/register_account_link"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TV"
+        android:layout_marginTop="5dp"
+        android:text="Or Logn With"
+        android:textSize="16sp"
+        android:layout_below="@id/register_account_link"
+        android:gravity="center"></TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/TV">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:id="@+id/facebook_signin_buttn"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/twitter_signin_buttn"
+            android:src="@drawable/twitter"/>
+        <ImageView
+            android:layout_width="57dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/google_signin_buttn"
+            android:src="@drawable/google"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MySocialNetworkAppCC</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string name="dont_have_an_account">Don not Have an Account? <font color='#168EDF'>Create One?</font></string>
+    <string name="home"><font color='#FFFFFF'>Home</font></string>
+    <string name="update_post"><font color='#FFFFFF'>Update Post</font></string>
+    <string name="edit_post"><font color='#FFFFFF'>Edit Post</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

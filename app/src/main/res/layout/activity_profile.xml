@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/profileactivity_backarrow"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:src="@drawable/profile"
+        android:layout_marginTop="30dp"
+        android:id="@+id/profileactivity_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Name"
+        android:textColor="#000000"
+        android:layout_marginLeft="31dp"
+        android:id="@+id/profileactivity_name"
+        android:textSize="20dp"
+        android:layout_below="@id/profileactivity_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:layout_marginLeft="31dp"
+        android:id="@+id/profileactivity_username"
+        android:layout_below="@id/profileactivity_name"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/profileactivity_username"
+        android:id="@+id/profileactivity_description"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="country"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profileactivity_country"
+        android:layout_below="@id/profileactivity_description"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/profileactivity_country"
+        android:id="@+id/profileactivity_dob"
+        android:text="DOB"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gender"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/profileactivity_gender"
+        android:layout_below="@id/profileactivity_dob"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Martial Status"
+        android:id="@+id/profileactivity_relationship"
+        android:layout_below="@id/profileactivity_gender"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ClickPostActivity">
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/edit_post_toolbar"></include>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/edit_post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/post_card_view"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/click_post_image"
+                android:scaleType="fitXY"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/click_post_description"
+        android:text="Post Description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/post_card_view"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/floating_action_menu"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/white"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/custom_Fab">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_edit"
+            android:id="@+id/edit_post_fab"
+            app:fab_title="Edit Post"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_delete"
+            android:id="@+id/delete_post_fab"
+            app:fab_title="Delete Post"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
